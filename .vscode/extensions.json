@@ -1,8 +1,8 @@
 {
-    "recommendations": [
-        "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint",
-        "expo.vscode-expo-tools",
-        "msjsdiag.vscode-react-native"
-    ]
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "expo.vscode-expo-tools",
+    "msjsdiag.vscode-react-native"
+  ]
 }

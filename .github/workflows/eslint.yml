@@ -2,10 +2,10 @@ name: ESLint
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
   schedule:
-    - cron: '42 1 * * 2'
+    - cron: "42 1 * * 2"
 
 jobs:
   eslint:
