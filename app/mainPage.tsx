@@ -1,9 +1,11 @@
 import React from "react";
-import { StyleSheet, View, ImageBackground, Text } from "react-native";
+import { StyleSheet, ImageBackground } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import background from "../assets/images/road.png";
 import snail from "../assets/images/snail.png";
+
+import { Text, View } from "@/components/Themed";
 
 const MainPage: React.FC = () => {
   const unicodeSettingIcon = "\u2699";
