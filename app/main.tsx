@@ -3,6 +3,7 @@ import { StyleSheet, View, ImageBackground, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import background from "../assets/images/road.png";
+import snail from "../assets/images/snail.png";
 
 const Main: React.FC = () => {
   const unicodeSettingIcon = "\u2699";
@@ -18,6 +19,15 @@ const Main: React.FC = () => {
           <View style={styles.rows}>
             <View style={styles.halfscreen}>
               <Text style={styles.stats}>Current Stats</Text>
+            </View>
+            <View style={styles.center}>
+              <View style={styles.snail}>
+                <ImageBackground
+                  source={snail}
+                  resizeMode="stretch"
+                  style={styles.background}
+                />
+              </View>
             </View>
             <View style={styles.halfscreen}>
               <Text style={styles.settings}>{unicodeSettingIcon}</Text>
@@ -38,7 +48,20 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   halfscreen: {
-    width: "50%",
+    width: "40%",
+  },
+  center: {
+    width: "20%",
+    height: "100%",
+    borderColor: "yellow",
+    borderWidth: 3,
+    flex: 1,
+  },
+  snail: {
+    width: "100%",
+    height: "10%",
+    borderColor: "pink",
+    borderWidth: 3,
   },
   background: {
     flex: 1,
