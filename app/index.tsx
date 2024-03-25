@@ -4,7 +4,7 @@ import { StyleSheet, Pressable } from "react-native";
 
 import { Text, View } from "@/components/Themed";
 
-const Index: React.FC = () => {
+const IndexScreen: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text>Welcome to snail game</Text>
@@ -25,4 +25,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Index;
+export default IndexScreen;

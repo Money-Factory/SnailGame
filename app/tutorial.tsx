@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 
 import { Text, View } from "@/components/Themed";
 
-const Tutorial: React.FC = () => {
+const TutorialScreen: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text>Some text here</Text>
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Tutorial;
+export default TutorialScreen;
