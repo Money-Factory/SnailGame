@@ -1,8 +1,10 @@
 import { Link } from "expo-router";
 import React from "react";
-import { StyleSheet, View, Text, Pressable } from "react-native";
+import { StyleSheet, Pressable } from "react-native";
 
-const Index: React.FC = () => {
+import { Text, View } from "@/components/Themed";
+
+const IndexScreen: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text>Welcome to snail game</Text>
@@ -23,4 +25,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Index;
+export default IndexScreen;
