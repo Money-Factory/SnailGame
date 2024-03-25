@@ -5,7 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import background from "../assets/images/road.png";
 import snail from "../assets/images/snail.png";
 
-const Main: React.FC = () => {
+const MainPage: React.FC = () => {
   const unicodeSettingIcon = "\u2699";
 
   return (
@@ -75,4 +75,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Main;
+export default MainPage;
