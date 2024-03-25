@@ -5,6 +5,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import background from "../assets/images/road.png";
 
 const Main: React.FC = () => {
+  const unicodeSettingIcon = "\u2699";
+
   return (
     <View style={styles.root}>
       <ImageBackground
@@ -13,8 +15,13 @@ const Main: React.FC = () => {
         style={styles.background}
       >
         <SafeAreaView style={styles.root}>
-          <View style={styles.test2}>
-            <Text>filler</Text>
+          <View style={styles.rows}>
+            <View style={styles.halfscreen}>
+              <Text style={styles.stats}>Current Stats</Text>
+            </View>
+            <View style={styles.halfscreen}>
+              <Text style={styles.settings}>{unicodeSettingIcon}</Text>
+            </View>
           </View>
         </SafeAreaView>
       </ImageBackground>
@@ -26,18 +33,22 @@ const styles = StyleSheet.create({
   root: {
     flex: 1,
   },
+  rows: {
+    flex: 1,
+    flexDirection: "row",
+  },
+  halfscreen: {
+    width: "50%",
+  },
   background: {
     flex: 1,
     justifyContent: "center",
   },
-  test: {
-    flex: 1,
-    backgroundColor: "red",
+  stats: {
+    color: "black",
   },
-  test2: {
-    flex: 1,
-    borderColor: "yellow",
-    borderWidth: 1,
+  settings: {
+    textAlign: "right",
   },
 });
 
