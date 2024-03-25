@@ -2,7 +2,7 @@ import { Link } from "expo-router";
 import React from "react";
 import { StyleSheet, View, Text, Pressable } from "react-native";
 
-const Home: React.FC = () => {
+const Index: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text>Welcome to snail game</Text>
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default Index;
