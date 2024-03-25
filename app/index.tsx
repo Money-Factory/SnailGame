@@ -1,6 +1,8 @@
 import { Link } from "expo-router";
 import React from "react";
-import { StyleSheet, View, Text, Pressable } from "react-native";
+import { StyleSheet, Pressable } from "react-native";
+
+import { Text, View } from "@/components/Themed";
 
 const Index: React.FC = () => {
   return (
