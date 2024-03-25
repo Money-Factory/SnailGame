@@ -1,16 +1,16 @@
-import { Link } from "expo-router";
 import React from "react";
-import { StyleSheet, View, Text, Pressable } from "react-native";
+import { StyleSheet, View, ImageBackground } from "react-native";
+
+import background from "../assets/images/road.png";
 
 const Main: React.FC = () => {
   return (
     <View style={styles.container}>
-      <Text>Welcome to snail game</Text>
-      <Link href="/tutorial" asChild>
-        <Pressable>
-          <Text>Click for tutorial started!!!!!!!!!</Text>
-        </Pressable>
-      </Link>
+      <ImageBackground
+        source={background}
+        resizeMode="cover"
+        style={styles.background}
+      />
     </View>
   );
 };
@@ -18,7 +18,9 @@ const Main: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
+  },
+  background: {
+    flex: 1,
     justifyContent: "center",
   },
 });
