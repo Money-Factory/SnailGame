@@ -2,10 +2,10 @@ import React from "react";
 import { StyleSheet, ImageBackground } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import background from "../assets/images/road.png";
-import snail from "../assets/images/snail.png";
+import background from "../../assets/images/road.png";
+import snail from "../../assets/images/snail.png";
 
-import { Text, View } from "@/components/Themed";
+import { Text, View } from "@/src/components/Themed";
 
 const MainPage: React.FC = () => {
   const unicodeSettingIcon = "\u2699";

@@ -2,7 +2,7 @@ import { Link } from "expo-router";
 import React from "react";
 import { StyleSheet, Pressable } from "react-native";
 
-import { Text, View } from "@/components/Themed";
+import { Text, View } from "@/src/components/Themed";
 
 const IndexScreen: React.FC = () => {
   return (
