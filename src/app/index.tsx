@@ -2,6 +2,8 @@ import { Link } from "expo-router";
 import React from "react";
 import { StyleSheet, Pressable } from "react-native";
 
+import { StepsCounter } from "../features/stepsCounter/stepsCounter";
+
 import { Text, View } from "@/src/components/Themed";
 
 const IndexScreen: React.FC = () => {
@@ -13,6 +15,7 @@ const IndexScreen: React.FC = () => {
           <Text>Click for tutorial started!</Text>
         </Pressable>
       </Link>
+      <StepsCounter />
     </View>
   );
 };

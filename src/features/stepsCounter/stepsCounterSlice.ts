@@ -56,6 +56,6 @@ export const stepsCounterSlice = createSlice({
 export const { increment, decrement, incrementByAmount } =
   stepsCounterSlice.actions;
 
-export const selectCount = (state: RootState) => state.stepsCounter.value;
+export const selectCount = (state: RootState) => state.value;
 
 export default stepsCounterSlice.reducer;
